@@ -11,18 +11,18 @@ API_URL = 'https://api.lgchannels.com/api/v1.0/schedulelist'
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
 
 # Filenames (Removed playlists directory)
-M3U_FILENAME = "lg_channels_us.m3u"
-EPG_FILENAME = "lg_channels_us.xml"
+M3U_FILENAME = "lg_channels_gb.m3u"
+EPG_FILENAME = "lg_channels_gb.xml"
 
 # User and Repo Details
-GITHUB_USERNAME = "BuddyChewChew"
+GITHUB_USERNAME = "tpadev"
 REPO_NAME = "lg-playlist-generator"
 # Corrected URL to point to root
 GITHUB_RAW_URL = f"https://raw.githubusercontent.com/{GITHUB_USERNAME}/{REPO_NAME}/main/{EPG_FILENAME}"
 
 headers = {
     'user-agent': USER_AGENT,
-    'x-device-country': 'US',
+    'x-device-country': 'GB',
     'x-device-language': 'en',
     'accept': 'application/json, text/plain, */*',
     'referer': 'https://channel-lineup.lgchannels.com/',
